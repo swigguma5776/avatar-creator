@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<script src="./static/js/script.js" defer></script>
+<link rel="stylesheet" href="./static/css/style.css">
+<title>Avatar Creator</title>
+</head>
+<body class="container d-flex flex-column justify-content-center align-items-center">
+    <h1 class="display-5 text-white">Create Your Avatar</h1>
+    <form onsubmit="handleSubmit(event)" class="row g-3 w-75 p-3 mt-5  border rounded shadow was-validated" novalidate>
+        <div class="form-floating col-12 mb-3">
+            <input type="text" class="form-control" id="name" name="name" placeholder="name here" required>
+            <label for="name" class="ps-3">Bender Name</label>
+            <div class="invalid-feedback">Please Enter a Name</div>
+          </div>
+        <div class="form-floating col-12 mb-3">
+            <input type="number" class="form-control" id="age" name="age" placeholder="age here" min="1" max="100" required>
+            <label for="age" class="ps-3">Bender Age</label>
+            <div class="invalid-feedback">Please Enter a # between 1 and 100</div>
+          </div>
+          <div class="form-floating col-12 mb-3">
+            <input type="text" class="form-control" id="image" name="image" placeholder="age here" min="1" max="100">
+            <label for="image" class="ps-3">Image Url</label>
+         
+          </div>
+        
+        <div class="col-md-4 col-12">
+          <label for="nation" class="form-label">Bender Nation</label>
+          <select id="nation" name="nation" class="form-select">
+            <option selected>Choose...</option>
+            <option value="air">Air</option>
+            <option value="water">Water</option>
+            <option value="earth">Earth</option>
+            <option value="fire">Fire</option>
+          </select>
+        </div>
+        
+        <div class="col-12 col-md-4 ps-5">
+          <label class="abilities">Abilities</label>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="abilities" value="airbending" id="abilityAir">
+            <label class="form-check-label" for="abilityAir">Airbending</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="abilities" value="waterbending" id="abilityWater">
+            <label class="form-check-label" for="abilityWater">Waterbending</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="abilities" value="earthbending" id="abilityEarth">
+            <label class="form-check-label" for="abilityEarth">Earthbending</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" name="abilities" value="firebending" id="abilityFire">
+            <label class="form-check-label" for="abilityFire">Firebending</label>
+          </div>
+        </div>
+        <div class="col-4">
+            <label class="skills">Skill Level</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="skill-level" value="novice" id="novice" checked>
+                <label class="form-check-label" for="novice">
+                  Novice
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="skill-level" value="intermediate" id="intermediate">
+                <label class="form-check-label" for="intermediate">
+                  Intermediate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="skill-level" value="advanced" id="advanced" >
+                <label class="form-check-label" for="advanced">
+                  Advanced
+                </label>
+              </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-info">Create Avatar</button>
+        </div>
+      </form>
+      
+      <!-- Place to Display Characters on Cards -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 w-75 p-3 my-5 g-3 w-100 justify-content-center character-display ">
+        <!-- Avatar Cards go Here -->
+      </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>

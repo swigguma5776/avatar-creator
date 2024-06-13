@@ -1,0 +1,28 @@
+
+body {
+    background: linear-gradient(rgba(0, 186, 249, 0.1), rgba(0, 186, 249, 0.3)), url('../images/avatar2.jpeg');
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+form {
+    background-color:rgba(0, 186, 249,.8);
+}
+
+.card {
+    min-width: 300px;
+    height: 600px;
+}
+
+.image {
+    height: 250px;
+    overflow: hidden;
+    aspect-ratio: 1/1;
+}
+
+
+
+
+
+
