@@ -55,4 +55,26 @@ Once the application is running, you can:
 - **Skill Level**: Indicate the skill level of your avatar.
 
 ## Contributing
-Cont
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m 'Add new feature'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-name
+    ```
+5. Open a pull request with a detailed description of your changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+If you have any questions or feedback, please feel free to contact me at [your-email@example.com].
+
